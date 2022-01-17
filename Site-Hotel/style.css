@@ -3,4 +3,139 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(102, 101, 102);
 }
+
+i{
+    color: white;
+}
+
+header{
+    background-image: url("/Site-Hotel/imgs/header.jpg");
+    background-position: center;
+    height: 70vh;
+}
+
+nav{
+    background-color: white;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 13vw;
+    top: 6vh;
+}
+.logo{
+    font-size: 2em;
+    margin-left: 1.8vw;
+    padding-top: 10px;
+}
+
+.nav-itens{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    
+}
+li {
+    font-size: 1.1em;
+    margin: 1.5vh 0.7vw;
+    height: 5vh;
+    padding: 0.4em;
+}
+li:hover{
+    background-color: rgb(61, 190, 212);
+    color: white;
+    cursor: pointer;
+}
+
+/* MAIN */
+main{
+    background-color: rgb(241, 241, 241);
+}
+
+.texto-mensagem{
+    height: 15vh;
+    background-color: rgb(219, 218, 218);
+    display: flex;
+}
+.texto-descricao-pagina{
+    text-align: left;
+    width: 50vw;
+    margin: auto 10vw;
+}
+.estrelas{
+    margin: 4vh -3vw;
+}
+/*quarto principal*/
+
+.quartos{
+    display: inline-block;
+    width: 100vw;
+}
+.quartos-principais{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    
+}
+.quarto-principal{
+    margin: 0 1.3vw;
+
+}
+
+.img-quarto-principal{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 0.55vh;
+
+}
+.descricao-quarto{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgb(219, 218, 218);
+   
+}
+
+.titulo-quarto{
+    font-weight: bold;
+    font-weight: 1.5em;
+    padding-top: 0.7vh;
+    padding-left: 0.5vw;
+}
+.desc-quarto{
+    font-size: 0.8em;
+    padding-left: 0.3vw;
+}
+.visualizar{
+    background-color: rgb(61, 190, 212);
+    height: 3.5vw;
+    width: 4.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visualizar:hover{
+    background-color: rgb(58, 156, 173);
+}
+
+.quartos-normais{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    background-color: rgb(231, 230, 230);
+    padding:6vh;
+}
+
+.quarto-normal{
+    margin: 0 1.7vw;
+}
+
+.img-quarto-normal{
+    width: 320px;
+    height: 190px;
+}
+
