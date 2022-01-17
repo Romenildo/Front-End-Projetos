@@ -82,7 +82,7 @@ main{
     
 }
 .quarto-principal{
-    margin: 0 1.3vw;
+    margin: 0 1.5vw;
 
 }
 
@@ -91,7 +91,11 @@ main{
     height: 300px;
     position: relative;
     top: 0.55vh;
-
+}
+.img-quarto-principal:hover{
+    -webkit-transform: scale(1.16);
+    transform: scale(1.16);
+    top: -2.85vh;
 }
 .descricao-quarto{
     display: flex;
@@ -133,12 +137,20 @@ main{
 }
 
 .quarto-normal{
-    margin: 0 1.7vw;
+    margin: 0 1.85vw;
 }
 
 .img-quarto-normal{
     width: 320px;
     height: 190px;
+    position: relative;
+    top: 0;
+}
+
+.img-quarto-normal:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    top: -2.3vh;
 }
 
 /*Servicos*/
@@ -176,8 +188,13 @@ main{
     border-radius: 200px;
     margin-left: 3.3vw;
     margin-top: 1vh;
+    filter: blur(1px);
  
 }
+.img-servicos:hover{
+    filter: blur(0px);
+}
+
 .titulo-servicos{
     text-align: center;
     font-size: 1.3em;
