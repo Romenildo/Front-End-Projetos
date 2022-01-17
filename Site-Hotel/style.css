@@ -93,9 +93,9 @@ main{
     top: 0.55vh;
 }
 .img-quarto-principal:hover{
-    -webkit-transform: scale(1.16);
-    transform: scale(1.16);
-    top: -2.85vh;
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+    top: -2.3vh;
 }
 .descricao-quarto{
     display: flex;
@@ -126,6 +126,7 @@ main{
 
 .visualizar:hover{
     background-color: rgb(58, 156, 173);
+    cursor: pointer;
 }
 
 .quartos-normais{
@@ -256,18 +257,50 @@ main{
     text-align: left;
     font-size: 0.85em;
 }
+/*Comentarios sessao*/
+
+.comentarios{
+    background-color: rgb(255, 254, 254);
+    padding: 2vh 0;
+}
+
+.reviews{
+    padding: 5.5vh 0;
+    display: flex;
+    justify-content: center;
+}
+
+.review{
+    margin: 0 5vw;
+    padding: 2vh;
+}
+.comentario{
+    width: 26vw;
+    padding-bottom: 5vh;
+}
+
+.nome-comentario{
+    font-weight: bold;
+}
 
 
-
-
-
-
-.a:before{
+.reviews:before{
     content: '❝';
-    font-size: 10em;
+    font-size: 8em;
     color: #bbb;
-    background-color: red;
     position: relative;
     top: -.3em;
+    left: 0.55em;
     z-index: 0.5;
 }
+.reviews::after{
+    content: '❝';
+    font-size: 8em;
+    color: #bbb;
+    position: relative;
+    top: -.3em;
+    right: 38%;
+    z-index: 0.5;
+}
+
+/*footer*/
