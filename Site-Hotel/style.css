@@ -14,6 +14,7 @@ header{
     background-image: url("/Site-Hotel/imgs/header.jpg");
     background-position: center;
     height: 70vh;
+    background-size: cover;
 }
 
 nav{
@@ -77,6 +78,7 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 5vh;
+    padding: 4vh 0;
     
 }
 .quarto-principal{
@@ -95,7 +97,7 @@ main{
     display: flex;
     justify-content: space-between;
     position: relative;
-    background-color: rgb(196, 193, 193);
+    background-color: rgb(216, 215, 215);
    
 }
 
@@ -127,7 +129,7 @@ main{
     justify-content: center;
     margin-top: 5vh;
     background-color: rgb(231, 230, 230);
-    padding:6vh;
+    padding:8vh;
 }
 
 .quarto-normal{
@@ -152,6 +154,7 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 2vh;
+    padding: 6vh 0;
 
 }
 
@@ -203,4 +206,5 @@ main{
 /* Ofertas especiais*/
 .ofertas-especiais{
     background-color: rgb(196, 193, 193);
+    padding: 2vh 0;
 }
