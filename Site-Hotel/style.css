@@ -38,13 +38,14 @@ nav{
     list-style: none;
     
 }
-li {
+.nav-item {
     font-size: 1.1em;
     margin: 1.5vh 0.7vw;
     height: 5vh;
     padding: 0.4em;
+    color: rgb(102, 101, 102);
 }
-li:hover{
+.nav-item:hover{
     background-color: rgb(61, 190, 212);
     color: white;
     cursor: pointer;
@@ -68,6 +69,7 @@ main{
 .estrelas{
     margin: 4vh -3vw;
 }
+
 /*quarto principal*/
 
 .quartos{
@@ -304,3 +306,46 @@ main{
 }
 
 /*footer*/
+
+footer{
+    background-color: rgb(61, 190, 212);
+    padding: 3vh 0;
+}
+
+.footer-itens{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-item{
+    width: 20vw;
+    margin: 0 2vw;
+}
+
+.titulo-footer{
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+li{
+    list-style: none;
+    color: white;
+    line-height: 2em;
+    padding-left: 0.7vw;
+}
+.bolder{
+    font-weight: bold;
+}
+
+.galeria{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.img-galeria{
+    width: 70px;
+    height: 65px;
+    margin: 0.1em;
+}
