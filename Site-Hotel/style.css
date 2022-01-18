@@ -119,8 +119,8 @@ main{
 }
 .visualizar{
     background-color: rgb(61, 190, 212);
-    height: 3.5vw;
-    width: 4.5vw;
+    height: 6vh;
+    width: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,13 +375,17 @@ a:hover{
 }
 
 @media (max-width: 1051px){
-    .quartos-principais,.ofertas-especiais{
+    .quartos-principais{
         display: block;
         justify-content: center;
     }
     .img-quarto-principal{
         width: 70vw;
         height: 50vh;
+    }
+    .visualizar{
+        height: 7vh;
+        width: 10vw;
     }
     .quarto-principal{
         width: 70vw;
@@ -391,7 +395,7 @@ a:hover{
     .quarto-principal:last-child{
         margin-bottom: -1.5vh;
     }
-    .quartos-normais, .servicos,.ofertas, .reviews, .footer-itens{
+    .quartos-normais, .servicos,.ofertas, .reviews, .footer-itens, .ofertas{
         display: flex;
         flex-wrap: wrap;
     }
@@ -402,7 +406,7 @@ a:hover{
         width: 70vw;
     }
     .oferta{
-        width: 35vw;
+        width: 45vw;
     }
     .review{
         width: 60vw;
@@ -413,6 +417,9 @@ a:hover{
     .footer-item{
         width: 40vw;
         padding-bottom: 3vh;
+    }
+    .img-quarto-principal, .img-quarto-normal{
+        pointer-events:none;
     }
     
 }
