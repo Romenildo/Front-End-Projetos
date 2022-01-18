@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav">
             <div class="logo">
                 <p>HOTEL MAR</p>
             </div>
@@ -28,6 +28,15 @@
                 <li class="nav-item"> BLOG</li>
                 <li class="nav-item">CONTATO</li>
             </ul>
+            <div class="nav-itens-responsivo" id="nav-itens-responsivo">
+                <li class="nav-item"> PRINCIPAL</li>
+                <li class="nav-item">QUARTOS</li>
+                <li class="nav-item">RESERVAS</li>
+                <li class="nav-item">ELEMENTOS</li>
+                <li class="nav-item"> BLOG</li>
+                <li class="nav-item">CONTATO</li>
+            </div>
+            <label onclick="ativarNavResponsivo()" id="btn-nav" class="botao-nav-responsivo">&#9776;</label>
         </nav>
     </header>
     <main>
@@ -227,5 +236,6 @@
         </div>
     </footer>
     
+    <script src="/Site-Hotel/scrypt.js"></script>
 </body>
 </html>

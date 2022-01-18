@@ -401,6 +401,9 @@ a:hover{
     .servico{
         width: 70vw;
     }
+    .oferta{
+        width: 35vw;
+    }
     .review{
         width: 60vw;
     }
@@ -414,10 +417,51 @@ a:hover{
     
 }
 
-@media(max-width: 720px){
-    .nav-item{
-        background-color: red;
+.botao-nav-responsivo{
+    color: rgb(61, 190, 212);
+    font-size: 3.2em;
+    margin-right: 3vw;
+    display: none;
+    text-align: center;
+    text-indent: 3vw;
+}
+.botao-nav-responsivo:hover{
+    cursor: pointer;
+    color: rgb(58, 156, 173);
+}
+.nav-itens-responsivo{
+    display: none;
+}
+
+@media (max-width:940px){
+    .nav-itens{
+        display: none;
     }
+    .botao-nav-responsivo{
+        display: block;
+    }
+    .nav-itens-responsivo{
+        display: none;
+        width: 45vw;
+        margin: 0 auto;
+    }
+    .nav-item{
+        text-align: center;
+        height: 2.2em;
+
+        border-bottom: 1px ridge rgb(61, 190, 212);
+    }
+    .nav-item:last-child{
+        margin-bottom: 2vh;
+    }
+    .logo{
+        font-size: 3em;
+        text-indent: 21vw;
+    }
+}
+
+@media(max-width: 720px){
+    
     .img-quarto-principal{
         width: 90vw;
         height: 55vh;
