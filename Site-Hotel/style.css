@@ -42,13 +42,14 @@ nav{
     font-size: 1.1em;
     margin: 1.5vh 0.7vw;
     height: 5vh;
-    padding: 0.4em;
+    width: 6.5vw;
     color: rgb(102, 101, 102);
 }
 .nav-item:hover{
     background-color: rgb(61, 190, 212);
     color: white;
     cursor: pointer;
+    
 }
 
 /* MAIN */
@@ -319,7 +320,7 @@ footer{
 
 .footer-item{
     width: 20vw;
-    margin: 0 2vw;
+    margin: 0 0.5vw;
 }
 
 .titulo-footer{
