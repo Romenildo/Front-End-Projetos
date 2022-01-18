@@ -40,9 +40,9 @@ nav{
 }
 .nav-item {
     font-size: 1.1em;
-    margin: 1.5vh 0.7vw;
+    margin: 1.5vh 0vw;
     height: 5vh;
-    width: 6.5vw;
+    padding:0 0.5vw ;
     color: rgb(102, 101, 102);
 }
 .nav-item:hover{
@@ -105,7 +105,6 @@ main{
     justify-content: space-between;
     position: relative;
     background-color: rgb(216, 215, 215);
-   
 }
 
 .titulo-quarto{
@@ -213,7 +212,8 @@ main{
 .btn-servicos{
     border: none;
     background-color: inherit;
-    margin: 2vh 4.2vw;
+    display: block;
+    margin: 2vh auto;
     color: rgb(61, 190, 212);
     font-weight: bold;
     font-size: 1em;
@@ -239,6 +239,7 @@ main{
 .oferta{
     margin: 0 1.5vw;
     padding: 2vh;
+    width: 20vw;
 }
 .oferta:hover{
     background-color: rgb(196, 196, 196);
@@ -256,7 +257,7 @@ main{
     font-size: 1.2em;
 }
 .desc-oferta{
-    width: 20vw;
+
     text-align: left;
     font-size: 0.85em;
 }
@@ -276,9 +277,9 @@ main{
 .review{
     margin: 0 5vw;
     padding: 2vh;
+    width: 26vw;
 }
 .comentario{
-    width: 26vw;
     padding-bottom: 5vh;
 }
 
@@ -302,7 +303,7 @@ main{
     color: #bbb;
     position: relative;
     top: -.3em;
-    right: 38%;
+    right: 39%;
     z-index: 0.5;
 }
 
@@ -339,6 +340,28 @@ li{
 .bolder{
     font-weight: bold;
 }
+.posts-antigos{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: rgb(228, 224, 224);
+    line-height: 1.7em;
+
+}
+a::before{
+    content: '>';
+    font-size: 1.6em;
+    color: #bbb;
+    position: relative;
+    top: 0.16em;
+    left: -0.2em;
+
+    z-index: 0.5;
+}
+a:hover{
+    color: rgb(102, 101, 102);
+}
 
 .galeria{
     display: flex;
@@ -349,4 +372,83 @@ li{
     width: 70px;
     height: 65px;
     margin: 0.1em;
+}
+
+@media (max-width: 1051px){
+    .quartos-principais,.ofertas-especiais{
+        display: block;
+        justify-content: center;
+    }
+    .img-quarto-principal{
+        width: 70vw;
+        height: 50vh;
+    }
+    .quarto-principal{
+        width: 70vw;
+        margin: 5vh auto;
+        
+    }
+    .quarto-principal:last-child{
+        margin-bottom: -1.5vh;
+    }
+    .quartos-normais, .servicos,.ofertas, .reviews, .footer-itens{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .quarto-normal{
+        padding: 2.6vh 0;
+    }
+    .servico{
+        width: 70vw;
+    }
+    .review{
+        width: 60vw;
+    }
+    .reviews:before , .reviews::after{
+        content: "";
+    }
+    .footer-item{
+        width: 40vw;
+        padding-bottom: 3vh;
+    }
+    
+}
+
+@media(max-width: 720px){
+    .nav-item{
+        background-color: red;
+    }
+    .img-quarto-principal{
+        width: 90vw;
+        height: 55vh;
+    }
+    .quarto-principal{
+        width: 90vw;
+        margin: 5vh auto; 
+    }
+    .img-quarto-normal{
+        width: 75vw;
+        height: 47vh;
+        
+    }
+    .servico{
+        width: 70vw;
+        height: 45vh;
+        margin-bottom: 3vh;
+    }
+    .img-servicos{
+        filter: blur(0px);
+    }
+
+    .oferta{
+        width: 70vw;
+        margin-bottom: 2vh;
+    }
+    .img-oferta{
+        width: 68vw;
+        height: 45vh;
+    }
+    .review{
+        width: 60vw;
+    }
 }
