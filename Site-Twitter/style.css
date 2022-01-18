@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav{
+    width: 25vw;
+    height: 100vh;
+    background-color: rgb(43, 43, 43);
+}
+.logo{
+    padding-left: 10vw;
+    line-height: 3em;
+}
+.nav-itens{
+    padding-left: 9vw;
+    padding-right: 1.7vw;
+}
+
+.nav-item{
+    line-height: 1.7em;
+    font-size: 1.7em;
+    text-indent: 1em;
+    margin: 1.7vh 0;
+    background-color: rgb(43, 43, 43);
+    border-radius: 50px;
+}
+.nav-item:hover{
+    background-color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+.btn-tweetar{
+    background-color: rgb(41, 175, 175);
+    color: white;
+    border-radius:50px;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 3.3vh 0;
+    height: 7vh;
+    width: 12vw;
+}
+
+.nav-perfil{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    margin-top: 4vh;
+    padding: 1.5vh 0 2vh 9vw;
+    width: 20vw;
+    margin-left: 9vw;
+}
+.nav-perfil:hover{
+    background-color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+.info-perfil{
+    display: flex;
+}
+.nome-usuario{
+    font-weight: bold;
+}
+.sub-nome-usuario{
+    color: gray;
+}
+.pontos{
+    font-weight: 2em;
+    padding-right: 1em;
+    font-size: 2em;
+}
+.img-perfil{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    margin-right: 1vw;
+}
