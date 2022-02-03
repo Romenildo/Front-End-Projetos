@@ -6,10 +6,14 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+body{
+    display: flex;
+}
 nav{
     width: 25vw;
     height: 100vh;
     background-color: rgb(43, 43, 43);
+    position: fixed;
 }
 .logo{
     padding-left: 10vw;
@@ -25,7 +29,6 @@ nav{
     font-size: 1.7em;
     text-indent: 1em;
     margin: 1.7vh 0;
-    background-color: rgb(43, 43, 43);
     border-radius: 50px;
 }
 .nav-item:hover{
@@ -47,15 +50,19 @@ a{
     height: 7vh;
     width: 12vw;
 }
+.btn-tweetar:hover{
+    cursor: pointer;
+    background-color: rgb(41, 161, 161);
+}
 
 .nav-perfil{
     display: flex;
     justify-content: space-between;
     border-radius: 50px;
-    margin-top: 4vh;
-    padding: 1.5vh 0 2vh 9vw;
-    width: 20vw;
-    margin-left: 9vw;
+    margin-top: 5vh;
+    padding: 1.5vh 0 1.5vh 0.5vw;
+    width: 16vw;
+    margin-left: 8.5vw;
 }
 .nav-perfil:hover{
     background-color: rgb(70, 70, 70);
@@ -72,7 +79,9 @@ a{
 }
 .pontos{
     font-weight: 2em;
-    padding-right: 1em;
+    padding-right: 0.4em;
+    bottom: 0.2em;
+    position: relative;
     font-size: 2em;
 }
 .img-perfil{
@@ -80,4 +89,73 @@ a{
     height: 45px;
     border-radius: 50px;
     margin-right: 1vw;
+}
+
+/*Main*/
+main{
+    width: 40vw;
+    margin-left: 25vw;
+}
+
+aside{
+    display: block;
+    width: 35vw;
+    left: 200px;
+    background-color: rgb(43, 43, 43);
+}
+
+.trending{
+    padding:  4vh 10vh 10vh 10vh;
+}
+
+.pesquisar{
+    background-color: rgb(70, 70, 70);
+    border-radius: 50px;
+    width: 350px;
+    height: 6vh;
+    margin-bottom: 2vh;
+}
+input[type="text"]{
+    background-color: inherit;
+    margin-left: 60px;
+    width: 290px;
+    border-radius: 0px 50px 50px 0px;
+    border-left: 2px solid aqua;
+    height: 5.5vh;
+    margin-top: 2px;
+    font-size: 1.2em;
+}
+
+.topicos{
+    background-color: rgb(70, 70, 70);
+    width: 350px;
+    height: 70vh;
+    border-radius: 20px;
+}
+
+.topicos-titulo, .quem-seguir-titulo{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 20px 0px 0px 20px;
+}
+
+.quem-seguir{
+    margin-top: 20px;
+    background-color: rgb(70, 70, 70);
+    width: 350px;
+    height: 30vh;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+footer{
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.termo{
+    margin:0px 10px 10px 10px;
+    color: gray;
+    cursor: pointer;
 }
